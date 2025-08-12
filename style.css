@@ -5,10 +5,12 @@
   box-sizing: border-box; /* Menghitung lebar elemen termasuk border & padding */
 }
 
+/* ======== GLOBAL STYLES ======== */
 html {
   scroll-behavior: smooth; /* Membuat scroll berpindah halus */
 }
 
+/* ======== BODY ======== */
 body { /* Styling untuk seluruh body halaman */
   font-family: Arial, sans-serif; /* Mengatur font teks */
   background-color: #0f172a; /* Warna latar belakang halaman (biru gelap) */
@@ -18,6 +20,7 @@ body { /* Styling untuk seluruh body halaman */
 }
 
 /* ======== HERO SECTION ======== */
+/* Bagian Hero (bagian paling atas halaman) */
 #hero {
   display: flex; /* Menggunakan flexbox */
   align-items: center; /* Vertikal di tengah */
@@ -39,7 +42,6 @@ body { /* Styling untuk seluruh body halaman */
   line-height: 1.2; /* Jarak antar baris judul */
   font-family: 'Arial', sans-serif; /* Font untuk judul */
   letter-spacing: 1px; /* Jarak antar huruf */
-
 }
 
 .hero-content h1 span {
@@ -94,6 +96,7 @@ body { /* Styling untuk seluruh body halaman */
   animation: blink-caret 0.7s step-end infinite;
 }
 
+/* Responsif untuk layar kecil */
 @media (max-width: 768px) { /* Responsif untuk layar kecil */
   #hero {
     flex-direction: column; /* Susun elemen secara vertikal */
@@ -128,7 +131,6 @@ body { /* Styling untuk seluruh body halaman */
     shadow: 0 4px 6px rgba(249, 249, 249, 1); /* Bayangan halus di bawah teks */
     line-height: 1.2; /* Jarak antar baris judul */
     font-family: 'Arial', sans-serif; /* Font untuk judul */
-
   }
 
   #dynamic-text {
@@ -144,11 +146,10 @@ body { /* Styling untuk seluruh body halaman */
   border-right: 2px solid white; /* Kursor */
   white-space: nowrap;
   overflow: hidden;
+  }
 }
-}
 
-
-
+/* Animasi kursor untuk teks dinamis */
 @keyframes blink-caret {
   from, to {
     border-color: transparent;
@@ -157,179 +158,6 @@ body { /* Styling untuk seluruh body halaman */
     border-color: white;
   }
 }
-
-
-.btn-primary {
-  background: #38bdf8; /* Warna biru cerah */
-  color: #0f172a; /* Teks biru gelap */
-  padding: 10px 20px; /* Ruang dalam tombol */
-  border-radius: 5px; /* Sudut membulat */
-  text-decoration: none; /* Hilangkan garis bawah */
-  font-weight: bold; /* Teks tebal */
-  transition: background 0.3s ease;
-}
-
-.btn-primary:hover {
-  background: #0ea4e9ac; /* Warna biru lebih gelap saat hover */
-}
-
-.btn-secondary {
-  background: transparent; /* Tidak ada background */
-  color: #38bdf8; /* Warna teks biru */
-  padding: 10px 20px;
-  border: 2px solid #38bdf8; /* Garis tepi biru */
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.btn-secondary:hover {
-  background: #38bdf8; /* Warna biru saat hover */
-  color: #0f172a; /* Teks biru gelap */
-}
-
-
-/* ======== HEADER ======== */
-/*header {
-  /* Menggunakan flexbox */
-/*  justify-content: space-between; /* Spasi antar elemen */
-/* align-items:; /* Vertikal di tengah */
-/*  padding: 10px 20px; /* Ruang dalam header */
-/*  color: white; /* Warna teks putih */
-/*  position: sticky; /* Tetap di atas saat scroll */
-/*  top: 0; /* Posisi atas */
-/*  z-index: 1000; /* Agar tetap di atas elemen lain */
-/*  text-align: center; /* Posisi teks di tengah */
-/*  margin-bottom: 20px; /* Jarak bawah header dengan elemen setelahnya */
-/*}
-
-.judul {
-  font-size: 2em; /* Ukuran font 2 kali ukuran default */
-/*  color: #38bdf8; /* Warna teks biru cerah */
-/*}
-
-.hamburger {
-  display: none; /* Sembunyikan hamburger di desktop */
-/*  cursor: pointer; /* Kursor tangan saat hover */
-/*  flex-direction: column; /* Susun garis horizontal */
-/*}
-
-.hamburger span {
-  width: 25px; /* Lebar garis */
-/*  height: 3px; /* Tinggi garis */
-/*  background: white; /* Warna garis putih */
-/*  margin: 4px 0; /* Jarak antar garis */
-/*  transition: 0.4s; /* Transisi saat hover */
-/*}
-
-/* ======== Menu Navigasi ======== */
-/*nav {
-  display: flex; /* Menggunakan flexbox */
-/*  gap: 20px; /* Jarak antar link */
-/*}
-
-nav a {
-  color: white; /* Warna teks putih */
-/*  text-decoration: none; /* Hilangkan garis bawah */
-/*  transition: color 0.3s ease; /* Transisi warna saat hover */
-/*}
-
-nav a:hover {
-  color: #60a5f8; /* Warna biru lebih terang saat hover */
-/*}
-
-/* ======== Responsif untuk HP ======== */
-/*@media (max-width: 768px) { /* Untuk layar kecil (HP) */
-/*  header {
-    flex-direction: column; /* Susun elemen secara vertikal */
-/*    align-items: center; /* Pusatkan elemen */
-/*  }
-
-  .hamburger {
-    display: flex; /* Tampilkan hamburger di layar kecil */
-/*  }
-
-  nav {
-    display: none; /* Sembunyikan menu navigasi di awal */
-/*    flex-direction: column; /* Susun link secara vertikal */
-/*    position: fixed; /* Tetap di layar */
-/*    top: 0; /* Posisi atas */
-/*    right: -200px; /* Sembunyikan di luar layar */
-/*    height: 100%; /* Tinggi penuh layar */
-/*    width: 200px; /* Lebar menu */
-/*    background: #2563eb; /* Warna biru cerah */
-/*    align-items: center; /* Pusatkan link */
-/*    justify-content: center; /* Pusatkan link */
-/*    transition: right 0.3s ease; /* Transisi saat membuka menu */
-/*    gap: 30px; /* Jarak antar link */
-/*  }
-  nav.show {
-    right: 0; /* Tampilkan menu saat hamburger diklik */
-/* }
-/*}*/
-
-/*.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-} */
-
-
-/* ======== THEME TOGGLE BUTTON ========
-#theme-toggle {
-  position: fixed; (Tetap di layar)
-  top: 20px;
-  right: 20px;
-  background: #1e293b; (Warna default)
-  color: #f1f5f9; (Teks putih)
-  border: none;
-  padding: 10px 14px;
-  border-radius: 50%;
-  font-size: 1.2em;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  z-index: 1000;
-}
-
-#theme-toggle:hover {
-  background: #334155; (Sedikit lebih terang saat hover)
-}
-
-(Kalau mau tombolnya di kiri atas atau kiri bawah, cukup ubah top/bottom dan left/right)
-*/
-
-/*======== LIGHT MODE STYLE ========
-body.light-mode {
-  background: #f8fafc; (Latar putih)
-  color: #0f172a; (Teks gelap) 
-}
-
-body.light-mode header,
-body.light-mode section,
-body.light-mode footer {
-  background: #ffffff;  (Bagian putih)
-  color: #0f172a; (Teks gelap)
-}
-
-body.light-mode .project-card {
-  background: #ffffff; (Kartu putih)
-  color: #0f172a;
-}
-
-body.light-mode .hero-content {
-  color: #0f172a; (Teks gelap di hero)
-  background: #ffffff; (Latar putih)
-}
-
-body.light-mode #theme-toggle {
-  background: #e2e8f0; (Abu terang)
-  color: #0f172a;
-}*/
 
 /* ======== SECTION ======== */
 section {
@@ -515,6 +343,7 @@ button.loading::after { /* Elemen loading spinner */
   animation: spin 0.6s linear infinite; /* Animasi berputar */
 }
 
+/* Animasi berputar untuk spinner */
 @keyframes spin { /* Animasi berputar */
   to { transform: rotate(360deg); } /* Sampai 360 derajat */
 }
