@@ -1,0 +1,172 @@
+<!doctype html> <!-- Deklarasi tipe dokumen HTML5 -->
+    <html lang="id"> <!-- Tag pembuka HTML, atribut lang="id" artinya bahasa Indonesia -->
+        <head> <!-- Bagian head: berisi informasi tentang dokumen -->
+            <meta charset="utf-8" /> <!-- Menentukan encoding karakter UTF-8 supaya teks tampil dengan benar -->
+            <meta name="viewport" content="width=device-width,initial-scale=1" /> <!-- Supaya tampilan responsif di perangkat mobile -->
+            <title>Portofolio — Muhammad Gatan Rifani</title> <!-- Judul halaman di tab browser -->
+            <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS eksternal -->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        </head>
+        <body> <!-- Bagian body: berisi konten yang akan tampil di halaman -->
+
+            <section id="hero" class="fade-in scroll-fade"> <!-- Bagian pembuka utama -->
+                <div class="hero-content"> <!-- Kontainer isi hero -->
+                    <div class="hero-content-logo">
+                        <img src="img/logo2.png" alt="Logo Muhammad Gatan Rifani" class="hero-logo">
+                    </div> <!-- Logo di bagian hero -->
+                    <div class="hero-conten-judul">
+                        <h1><span>Muhammad Gatan Rifani</span></h1> <!-- Judul besar dengan highlight -->
+                        <p>I'm <span id="dynamic-text"></span></p> <!-- Deskripsi singkat -->
+                    </div>
+                    <!--<div class="hero-buttons">--> <!-- Kontainer tombol -->
+                        <!--<a href="#projects" class="btn-primary">Lihat Proyek</a>--> <!-- Tombol utama -->
+                        <!--<a href="#contact" class="btn-secondary">Hubungi Saya</a>--> <!-- Tombol sekunder -->
+                    <!--</div>-->
+                </div>
+            </section>
+
+            <!-- Header --> 
+            <!--<header id="home">--> <!-- Bagian kepala halaman -->
+                <!--<div class="judul">-->
+                    <!--<h1>Halo, Saya Muhammad Gatan Rifani</h1>-->
+                <!--</div>--> <!-- Judul utama halaman -->
+
+                <!-- Tombol Hamburger -->
+                <!--<div class="hamburger" id="hamburger">--> <!-- Tombol menu untuk perangkat mobile -->
+                    <!--<span class="bar"></span>--> <!-- Garis atas -->
+                    <!--<span class="bar"></span>--> <!-- Garis tengah -->
+                    <!--<span class="bar"></span>--> <!-- Garis bawah -->
+                <!--</div>-->
+
+                <!-- Menu Navigasi -->
+                <!--<nav id="navMenu">-->
+                    <!--<a href="#home">Home</a>
+                    <a href="#about">Tentang Saya</a>
+                    <a href="#projects">Proyek</a>
+                    <a href="#contact">Kontak</a>
+                </nav>-->
+                <!--<button id="theme-toggle" aria-label="Ganti Tema">
+                    <svg id="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path id="sun" d="M12 4V2M12 22v-2M4.22 4.22L2.81 2.81M19.78 19.78l1.41 1.41M4 12H2m20 0h-2M4.22 19.78l-1.41 1.41M19.78 4.22l1.41-1.41" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button> (Tombol ganti tema)-->
+            <!--</header>-->
+
+            <!-- Konten utama -->
+            <main> <!-- Elemen utama untuk konten penting -->
+
+                <!-- Bagian Tentang Saya -->
+                <section id="about" class="fade-in scroll-fade" > <!-- Section untuk "Tentang Saya", id untuk navigasi --><!-- class=fade-in-->
+                    <h2>About</h2> <!-- Judul section -->
+                    <p>Seorang Electrical Engineer yang ahli dalam pemrograman PLC dan mampu menerjemahkan logika kontrol ke dalam program PLC dan juga mampu mengintegrasikannya dengan perangkat lain.</p> <!-- Paragraf deskripsi -->
+                </section>
+
+                <!-- Bagian Proyek -->
+                <section id="projects" class="fade-in scroll-fade"> <!-- Section untuk "Proyek" --><!-- class=fade-in-->
+                    <h2>Proyek</h2> <!-- Judul section -->
+                    <p>Berikut beberapa pengalaman Saya:</p> <!-- Paragraf pengantar -->
+                    <div class="project-grid"> <!-- Kontainer grid proyek -->
+
+                        <div class="project-card scroll-fade"> <!-- Satu kartu proyek -->
+                            <img src="h  ttps://via.placeholder.com/400x250" alt="Proyek 1"> <!--Gambar proyek-->
+                            <div class="project-info"> <!-- Kontainer informasi proyek --> 
+                                <h3>Proyek 1</h3> <!-- Judul proyek -->
+                                <p>Deskripsi singkat tentang proyek 1.</p> <!-- Deskripsi proyek -->
+                            </div>
+                        </div>
+
+                        <div class="project-card scroll-fade"> <!-- Satu kartu proyek -->
+                            <img src="https://via.placeholder.com/400x250" alt="Proyek 2"> <!--Gambar proyek-->
+                            <div class="project-info"> <!-- Kontainer informasi proyek -->
+                                <h3>Proyek 2</h3> <!-- Judul proyek -->
+                                <p>Deskripsi singkat tentang proyek 2.</p> <!-- Deskripsi proyek -->
+                            </div>
+                        </div>
+
+                        <div class="project-card scroll-fade"> <!-- Satu kartu proyek -->
+                            <img src="https://via.placeholder.com/400x250" alt="Proyek 3"> <!--Gambar proyek-->
+                            <div class="project-info"> <!-- Kontainer informasi proyek -->
+                                <h3>Proyek 3</h3> <!-- Judul proyek -->
+                                <p>Deskripsi singkat tentang proyek 3.</p> <!-- Deskripsi proyek -->
+                            </div>
+                        </div>
+                        
+                        <div class="project-card scroll-fade"> <!-- Satu kartu proyek -->
+                            <img src="https://via.placeholder.com/400x250" alt="Proyek 4"> <!--Gambar proyek-->
+                            <div class="project-info"> <!-- Kontainer informasi proyek -->
+                                <h3>Proyek 4</h3> <!-- Judul proyek -->
+                                <p>Deskripsi singkat tentang proyek 4.</p> <!-- Deskripsi proyek -->
+                            </div>
+                        </div>
+
+                    </div> <!-- Penutup kontainer grid proyek -->
+                </section>
+                <section class="parallax" style="background-image: url('https://source.unsplash.com/random/1600x900/?nature,water'); height: 400px;"></section> <!-- Bagian parallax dengan gambar acak dari Unsplash -->
+
+                <!-- Bagian Kontak -->
+                <section id="contact" class="fade-in scroll-fade"> <!-- Section untuk "Kontak" --><!-- class=fade-in-->
+                    <h2>Kontak</h2> <!-- Judul section -->
+                    <p>Email: muhammadgatanrifani@gmail.com</p> <!-- Paragraf berisi email -->
+                </section>
+            </main>
+        
+            <section id="contact" class="scroll-fade">
+            <h2>Kontak Saya</h2>
+            <form id="contact-form"> <!--bagi form kontak-->
+                <label for="name">Nama</label> <!-- Label untuk input nama -->
+                <input type="text" id="name" name="name" placeholder="Masukkan nama" required> <!-- Input teks untuk nama, wajib diisi -->
+
+                <label for="email">Email</label> <!-- Label untuk input email -->
+                <input type="email" id="email" name="email" placeholder="Masukkan email" required> <!-- Input email, wajib diisi -->
+
+                <label for="message">Pesan</label> <!-- Label untuk area pesan -->
+                <textarea id="message" name="message" rows="5" placeholder="Tulis pesan" required></textarea> <!-- Area teks untuk pesan, wajib diisi -->
+
+                <button type="submit">Kirim</button> <!-- Tombol kirim form -->
+                <p id="form-status"></p> <!-- Status sukses/gagal -->
+            </form>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script> <!-- Menghubungkan EmailJS untuk pengiriman email -->
+            </section>
+            <footer id="footer" class="fade-in scroll-fade"> <!-- Bagian footer --> <!-- class=fade-in-->
+                <div class="footer-content"> <!-- Kontainer isi -->
+                    <p>© 2025 Muhammad Gatan Rifani. Semua Hak Dilindungi.</p> <!-- Teks hak cipta -->
+                    <div class="social-icons"> <!-- Kontainer ikon -->
+                        <a href="https://www.linkedin.com/in/muhammad-gatan-rifani-74bbb1298" target="_blank" aria-label="LinkedIn"> <!-- LinkedIn -->
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/gtndulbes" target="_blank" aria-label="GitHub"> <!-- GitHub -->
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/gtn.dulbes_" target="_blank" aria-label="Instagram"> <!-- Instagram -->
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/62895411688848" target="_blank" aria-label="WhatsApp"> <!-- WhatsApp -->
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/bigtonessentlalpack" target="_blank" aria-label="Facebook"> <!-- Facebook -->
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@muhammadgatanrifani146" target="_blank" aria-label="YouTube"> <!-- YouTube -->
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@gtn.dulbes_" target="_blank" aria-label="TikTok"> <!-- TikTok -->
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+            <button id="scrollTopBtn" aria-label="Scroll to Top">⬆</button> <!-- Tombol untuk kembali ke atas halaman -->
+            <!-- Font Awesome untuk ikon -->
+            <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+            <!-- Tambahkan link Font Awesome untuk ikon -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+            AOS.init();
+            </script>
+
+            <!--script.js-->
+            <script src="script.js"></script> <!-- Menghubungkan file JavaScript eksternal untuk interaktivitas -->
+        </body>
+    </html> <!-- Penutup dokumen HTML -->
