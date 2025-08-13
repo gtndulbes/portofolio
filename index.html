@@ -11,8 +11,8 @@
             <!-- Konten utama -->
             <main> <!-- Elemen utama untuk konten penting -->
                 <!-- Bagian pembuka utama -->
-                <section id="hero" class="fade-in scroll-fade"> <!-- Bagian pembuka utama -->
-                    <div class="hero-content"> <!-- Kontainer isi hero -->
+                <section id="hero" class="scroll-fade"> <!-- Bagian pembuka utama -->
+                    <div class="hero-content scroll-fade"> <!-- Kontainer isi hero -->
                         <div class="hero-content-logo"> <!-- Kontainer logo di bagian hero -->
                             <img src="img/logo2.png" alt="Logo Muhammad Gatan Rifani" class="hero-logo">  <!-- Logo di bagian hero -->
                         </div>
@@ -23,7 +23,7 @@
                     </div>
                 </section>
                 <!-- Bagian Tentang Saya -->
-                <section id="about" class="fade-in scroll-fade" > <!-- Section untuk "Tentang Saya", id untuk navigasi --><!-- class=fade-in-->
+                <section id="about" class="about fade-in scroll-fade" > <!-- Section untuk "Tentang Saya", id untuk navigasi --><!-- class=fade-in-->
                     <h2>About</h2> <!-- Judul section -->
                     <p>Mahasiswa Teknik Elektro Universitas Wijayakusuma Purwokerto dengan pengalaman sebagai Helper Engineer dalam Turn Around
 2025 Kilang Pertamina Cilacap (PT Putranata Adi Mandiri). Terlibat dalam kalibrasi dan pengujian lebih dari 30 unit transmitter,
@@ -32,12 +32,12 @@ serta terbiasa bekerja teliti dan komunikatif dalam tim teknis. Tertarik berkont
 instalasi, dukungan teknis lapangan, dan pengembangan sistem IoT.</p> <!-- Paragraf deskripsi -->
                 </section>
                 <!-- Bagian Proyek -->
-                <section id="projects" class="fade-in scroll-fade"> <!-- Section untuk "Proyek" --><!-- class=fade-in-->
+                <section id="projects" class=" project scroll-fade"> <!-- Section untuk "Proyek" --><!-- class=fade-in-->
                     <h2>Proyek</h2> <!-- Judul section -->
                     <p>Berikut beberapa pengalaman Saya:</p> <!-- Paragraf pengantar -->
                     <div class="project-grid"> <!-- Kontainer grid proyek -->
                         <div class="project-card scroll-fade"> <!-- Satu kartu proyek -->
-                            <img src="h  ttps://via.placeholder.com/400x250" alt="Proyek 1"> <!--Gambar proyek-->
+                            <img src="https://via.placeholder.com/400x250" alt="Proyek 1"> <!--Gambar proyek-->
                             <div class="project-info"> <!-- Kontainer informasi proyek --> 
                                 <h3>Proyek 1</h3> <!-- Judul proyek -->
                                 <p>Deskripsi singkat tentang proyek 1.</p> <!-- Deskripsi proyek -->
@@ -66,12 +66,95 @@ instalasi, dukungan teknis lapangan, dan pengembangan sistem IoT.</p> <!-- Parag
                         </div>
                     </div> <!-- Penutup kontainer grid proyek -->
                 </section>
+                <!-- Bagian Resume -->
+                <section id="resume" class="resume scroll-fade"> <!-- Section untuk "Resume" --><!-- class=fade-in-->
+                    <div class="container"> <!-- Kontainer untuk resume -->
+                        <h2>Resume</h2> <!-- Judul section -->
+                        <p class="resume-intro"> Saya adalah mahasiswa Teknik Elektro yang memiliki ketertarikan pada bidang otomasi, embedded system, dan pengembangan perangkat lunak.
+Berpengalaman mengerjakan proyek berbasis microcontroller, IoT, dan sistem kontrol.  
+Memiliki kemampuan komunikasi dan kerja tim yang baik.</p> <!-- Paragraf pengantar resume -->
+                        <a href="resume.pdf" class="btn" download>Download Resume</a> <!-- Tombol untuk mengunduh resume dalam format PDF -->
+                        <div class="resume-container">
+                            <!-- Pendidikan -->
+                            <div class="resume-item scroll-fade"> <!-- Satu item resume -->
+                                <h3>Education</h3> <!-- Judul untuk bagian pendidikan -->
+                                <div class="timeline"> <!-- Kontainer timeline untuk pendidikan -->
+                                    <div class="timeline-item"> <!-- Satu item timeline -->
+                                        <h4>S1 Teknik Elektro</h4> <!-- Judul pendidikan -->
+                                        <span>2023 - Sekarang</span> <!-- Rentang waktu pendidikan -->
+                                        <p>Universitas Wijayakusuma Purwokerto Contoh</p> <!-- Deskripsi pendidikan -->
+                                    </div>
+                                    <div class="timeline-item">
+                                        <h4>M-IPA</h4> <!-- Judul pendidikan -->
+                                        <span>2019 - 2022</span> <!-- Rentang waktu pendidikan -->
+                                        <p>MAN 1 Tegal</p> <!-- Deskripsi pendidikan -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pengalaman -->
+                            <div class="resume-item scroll-fade"> <!-- Satu item resume -->
+                                <h3>Experience</h3>
+                                <div class="timeline"> <!-- Kontainer timeline untuk pengalaman -->
+                                    <div class="timeline-item">
+                                        <h4>Magang Helper Kalibrasi</h4> <!-- Judul pengalaman -->
+                                        <span>2024-2025</span> <!-- Rentang waktu pengalaman -->
+                                        <p>PT. Pertamina RU IV Cilacap bersama PT. Putranata Adi Mandiri</p> <!-- Deskripsi pengalaman -->
+                                    </div>
+                                    <div class="timeline-item">
+                                        <h4>Asisten Praktikum</h4> <!-- Judul pengalaman -->
+                                        <span>2025 - Sekarang</span> <!-- Rentang waktu pengalaman -->
+                                        <p>Lab Elektro</p> <!-- Deskripsi pengalaman -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Bagian Portofolio -->
+                <section id="portfolio" class="portfolio scroll-fade">
+                    <div class="container">
+                        <h2>Portfolio</h2>
+                        <div class="portfolio-grid">
+                            <div class="portfolio-item scroll-fade">
+                                <img src="assets/project1.jpg" alt="Project 1">
+                                <div class="portfolio-info">
+                                    <h3>Website Company Profile</h3>
+                                    <p>Website modern untuk profil perusahaan dengan HTML, CSS, dan JS.</p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item scroll-fade">
+                                <img src="assets/project2.jpg" alt="Project 2">
+                                <div class="portfolio-info">
+                                    <h3>IoT Monitoring System</h3>
+                                    <p>Sistem pemantauan suhu berbasis ESP32 dengan dashboard web.</p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item scroll-fade">
+                                <img src="assets/project3.jpg" alt="Project 3">
+                                <div class="portfolio-info">
+                                    <h3>Mobile App UI</h3>
+                                    <p>Desain antarmuka aplikasi mobile untuk layanan edukasi online.</p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item scroll-fade">
+                                <img src="assets/project4.jpg" alt="Project 4">
+                                <div class="portfolio-info">
+                                    <h3>Mobile App UI</h3>
+                                    <p>Desain antarmuka aplikasi mobile untuk layanan edukasi online.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- Bagian Parallax -->
                 <section class="parallax" style="background-image: url('https://source.unsplash.com/random/1600x900/?nature,water'); height: 400px;">                    
                 </section> <!-- Bagian parallax dengan gambar acak dari Unsplash -->
             </main>
             <!-- Bagian Kontak -->
-            <section id="contact" class="fade-in scroll-fade"> <!-- Section untuk "Kontak" --><!-- class=fade-in-->
+            <section id="contact" class="scroll-fade"> <!-- Section untuk "Kontak" --><!-- class=fade-in-->
                 <h2>Kontak</h2> <!-- Judul section -->
                 <p>Email: muhammadgatanrifani@gmail.com</p> <!-- Paragraf berisi email -->
             </section>
@@ -91,7 +174,7 @@ instalasi, dukungan teknis lapangan, dan pengembangan sistem IoT.</p> <!-- Parag
             </form>
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script> <!-- Menghubungkan EmailJS untuk pengiriman email -->
             </section>
-            <footer id="footer" class="fade-in scroll-fade"> <!-- Bagian footer --> <!-- class=fade-in-->
+            <footer id="footer" class="scroll-fade"> <!-- Bagian footer --> <!-- class=fade-in-->
                 <div class="footer-content"> <!-- Kontainer isi -->
                     <p>© 2025 Muhammad Gatan Rifani. Semua Hak Dilindungi.</p> <!-- Teks hak cipta -->
                     <div class="social-icons"> <!-- Kontainer ikon -->

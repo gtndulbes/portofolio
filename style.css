@@ -24,7 +24,7 @@ body { /* Styling untuk seluruh body halaman */
 #hero {
   display: flex; /* Menggunakan flexbox */
   align-items: center; /* Vertikal di tengah */
-  min-height: 95vh; /* Tinggi minimal 80% layar */
+  min-height: 97.5vh; /* Tinggi minimal 80% layar */
   background-image: url('img/my.jpg'); /* Gradasi warna dari biru tua ke biru cerah + gambar latar belakang */ 
   background-size: cover; /* Gambar latar belakang penuh */
   background-position: center; /* Posisi gambar di tengah */
@@ -88,12 +88,12 @@ body { /* Styling untuk seluruh body halaman */
   font-family: 'Arial', sans-serif; /* Font untuk judul */
   letter-spacing: 1px; /* Jarak antar huruf */
   border-right: 2px solid white; /* Kursor */
-  white-space: nowrap;
-  overflow: hidden;
+  white-space: nowrap; /* Agar teks tidak terputus */
+  overflow: hidden; /* Sembunyikan teks yang melampaui batas */
 }
 
 .blink {
-  animation: blink-caret 0.7s step-end infinite;
+  animation: blink-caret 0.7s step-end infinite; /* Animasi kursor berkedip */
 }
 
 /* Responsif untuk layar kecil */
@@ -162,9 +162,28 @@ body { /* Styling untuk seluruh body halaman */
 /* ======== SECTION ======== */
 section {
   margin-bottom: 30px; /* Jarak antar section */
-  background: #1e293b; /* Warna latar belakang section */
+  background: #1e293bff; /* Warna latar belakang section */
   padding: 20px; /* Ruang dalam section */
   border-radius: 10px; /* Membuat sudut melengkung */
+}
+
+/* ======== ABOUT SECTION ======== */
+.about {
+  padding: 20px 20px; /* Ruang dalam atas dan bawah */
+} 
+
+.about h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color:  #0077b6; /* Warna biru cerah */
+}
+
+.about p {
+  text-align: center; /* Rata tengah teks */
+  color: #cbd5e1; /* Warna teks abu-abu terang */
+  font-size: 1.1rem; /* Ukuran teks sedikit lebih besar */
+  line-height: 1.6; /* Jarak antar baris */
 }
 
 /* ======== PROYEK (LIST) ======== */
@@ -175,6 +194,24 @@ section ul {
 
 section li {
   margin-bottom: 5px; /* Jarak antar item list */
+}
+
+/* ======== PROYEK GRID ======== */
+.project {
+  padding: 20px; /* Ruang dalam atas dan bawah */
+}
+
+.project h2 {
+  text-align: center; /* Rata tengah judul proyek */
+  font-size: 2.2rem; /* Ukuran font judul proyek */
+  margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+.project p {
+  text-align: center; /* Rata tengah teks deskripsi proyek */
+  color: #cbd5e1; /* Warna teks abu-abu terang */
+  font-size: 1.1rem; /* Ukuran teks sedikit lebih besar */
+  line-height: 1.6; /* Jarak antar baris */
 }
 
 /* ======== PROJECT GRID RESPONSIF ======== */
@@ -189,12 +226,12 @@ section li {
   background: #525559ff; /* Warna latar belakang */
   padding: 20px; /* Ruang dalam kartu */
   border-radius: 10px; /* Sudut membulat */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Bayangan halus */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk hover */
+  box-shadow: 0 4px 6px rgba(108, 107, 107, 0.61); /* Bayangan halus */
+  transition: transform 0.3s ease; /* Efek transisi untuk hover */
 }
 
 .project-card:hover { /* Saat kursor di atas kartu */
-  transform: translateY(-5px); /* Kartu terangkat sedikit */
+  transform: scale(1.05); /* Sedikit membesar */
   box-shadow: 0 8px 12px rgba(0,0,0,0.4); /* Bayangan lebih besar */
 }
 
@@ -251,6 +288,172 @@ section li {
   transform: translateY(0); /* Kembali ke posisi normal */
 }
 
+/* ======== RESUME ======== */
+/* Bagian Resume */
+.resume {
+  padding: 60px 20px;
+  background: #f9f9f99f;
+}
+
+.resume h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #0076b6ff;
+}
+
+.resume-intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.btn {
+  display: flex; /* Menggunakan flexbox untuk tata letak tombol */
+  text-align: center; /* Rata tengah teks */
+  align-items: center; /* Pusatkan teks secara vertikal */
+  width: 150px; /* Lebar tombol */
+  justify-content: center; /* Pusatkan teks secara horizontal */
+  margin: 0 auto; /* Pusatkan tombol */
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #09478a9b;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.resume-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+}
+
+.resume-item {
+  background: #525559ff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.67);
+}
+
+.resume-item h3 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  border-left: 2px solid  #38bdf8;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: #0077b6;
+  border-radius: 50%;
+}
+
+.timeline-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.timeline-item span {
+  font-size: 0.9rem;
+  margin-left: 10px;
+  color: #718ea5ff;
+}
+
+.timeline-item p {
+  margin: 0;
+  margin-left: 10px;
+  color: #c3c3c3ff;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+  }
+}
+
+/* ======== PORTFOLIO ======== */
+/* Bagian Portofolio */
+.portfolio {
+  padding: 50px 20px;
+  background:#f9f9f99f;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Menggunakan grid untuk tata letak portofolio */
+  gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  background: #38bdf8;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03); /* Sedikit membesar saat hover */
+}
+
+.portfolio-item:hover img {
+  filter: brightness(0.8);
+}
+
+.portfolio-info {
+  padding: 15px;
+}
+
+.portfolio-info h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.portfolio-info p { 
+  font-size: 0.9rem;
+  color: #0077b6;
+}
+
 /* ======== PARALLAX BACKGROUND ======== */
 .parallax {
   background-attachment: fixed; /* Efek parallax */
@@ -268,7 +471,6 @@ section li {
 
 /* ======== CONTACT FORM ======== */
 #contact {
-  max-width: 600px; /* Lebar maksimal form */
   margin: 30px auto; /* Pusatkan form */
   padding: 40px 20px; /* Ruang dalam form */
   background: rgba(255, 255, 255, 0.05); /* Latar belakang semi-transparan */
