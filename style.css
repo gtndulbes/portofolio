@@ -412,8 +412,34 @@ section li {
   color: #2c3e50;
 }
 
+.filter-buttons {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.filter-btn {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  background: #0077ff86;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover {
+  background: #005dc1;
+}
+
+.filter-btn.active {
+  background: #ff880061;
+}
+   
+/* Grid untuk tata letak portofolio */
 .portfolio-grid {
   display: grid;
+  flex-wrap: wrap; /* Membolehkan item turun ke baris baru */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Menggunakan grid untuk tata letak portofolio */
   gap: 20px;
 }

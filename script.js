@@ -176,3 +176,26 @@ document.addEventListener("DOMContentLoaded", function () { // Pastikan DOM suda
 });
 
 
+// ======== PORTFOLIO FILTER ========
+// Ambil semua tombol filter dan proyek
+const filterBtns = document.querySelectorAll(".filter-btn");
+const projects = document.querySelectorAll(".portfolio-item");
+// Tambahkan event listener untuk setiap tombol filter
+filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        // Hapus status aktif di semua tombol
+        filterBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        // Ambil nilai filter dari tombol yang diklik
+        const filterValue = btn.getAttribute("data-filter");
+        // Tampilkan atau sembunyikan proyek berdasarkan kategori
+        projects.forEach(project => {
+            if (filterValue === "all" || project.getAttribute("data-category") === filterValue) {
+                project.style.display = "block";
+            }
+            else {
+                project.style.display = "none";
+            }
+        });
+    });
+});

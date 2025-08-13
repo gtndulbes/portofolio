@@ -5,7 +5,10 @@
             <meta name="viewport" content="width=device-width,initial-scale=1" /> <!-- Supaya tampilan responsif di perangkat mobile -->
             <title>Portofolio — Muhammad Gatan Rifani</title> <!-- Judul halaman di tab browser -->
             <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS eksternal -->
-            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Menghubungkan AOS (Animate On Scroll) untuk efek animasi saat scroll -->
+            <meta name="description" content="Portofolio Muhammad Gatan Rifani - Web Developer & Electrical Engineer"> <!-- Metadata untuk SEO, berisi deskripsi halaman -->
+            <meta name="keywords" content="Muhammad Gatan Rifani, Portofolio, Web Developer, Electrical Engineer, IoT, Embedded System"> <!-- Metadata untuk SEO, berisi deskripsi dan kata kunci -->
+            <meta name="author" content="Muhammad Gatan Rifani"> <!-- Metadata untuk SEO dan informasi penulis -->
         </head>
         <body> <!-- Bagian body: berisi konten yang akan tampil di halaman -->
             <!-- Konten utama -->
@@ -14,7 +17,7 @@
                 <section id="hero" class="scroll-fade"> <!-- Bagian pembuka utama -->
                     <div class="hero-content scroll-fade"> <!-- Kontainer isi hero -->
                         <div class="hero-content-logo"> <!-- Kontainer logo di bagian hero -->
-                            <img src="img/logo2.png" alt="Logo Muhammad Gatan Rifani" class="hero-logo">  <!-- Logo di bagian hero -->
+                            <img src="img/logo2.png" loading="lazy" alt="Logo Muhammad Gatan Rifani" class="hero-logo">  <!-- Logo di bagian hero -->
                         </div>
                         <div class="hero-conten-judul"> <!-- Kontainer judul di bagian hero -->
                             <h1><span>Muhammad Gatan Rifani</span></h1> <!-- Judul besar dengan highlight -->
@@ -37,28 +40,28 @@ instalasi, dukungan teknis lapangan, dan pengembangan sistem IoT.</p> <!-- Parag
                     <p>Berikut beberapa pengalaman Saya:</p> <!-- Paragraf pengantar -->
                     <div class="project-grid"> <!-- Kontainer grid proyek -->
                         <div class="project-card scroll-fade"> <!-- Satu kartu proyek -->
-                            <img src="https://via.placeholder.com/400x250" alt="Proyek 1"> <!--Gambar proyek-->
+                            <img src="https://via.placeholder.com/400x250" loading="lazy" alt="Proyek 1"> <!--Gambar proyek-->
                             <div class="project-info"> <!-- Kontainer informasi proyek --> 
                                 <h3>Proyek 1</h3> <!-- Judul proyek -->
                                 <p>Deskripsi singkat tentang proyek 1.</p> <!-- Deskripsi proyek -->
                             </div>
                         </div>
                         <div class="project-card scroll-fade"> <!-- Satu kartu proyek -->
-                            <img src="https://via.placeholder.com/400x250" alt="Proyek 2"> <!--Gambar proyek-->
+                            <img src="https://via.placeholder.com/400x250" loading="lazy" alt="Proyek 2"> <!--Gambar proyek-->
                             <div class="project-info"> <!-- Kontainer informasi proyek -->
                                 <h3>Proyek 2</h3> <!-- Judul proyek -->
                                 <p>Deskripsi singkat tentang proyek 2.</p> <!-- Deskripsi proyek -->
                             </div>
                         </div>
                         <div class="project-card scroll-fade"> <!-- Satu kartu proyek -->
-                            <img src="https://via.placeholder.com/400x250" alt="Proyek 3"> <!--Gambar proyek-->
+                            <img src="https://via.placeholder.com/400x250" loading="lazy" alt="Proyek 3"> <!--Gambar proyek-->
                             <div class="project-info"> <!-- Kontainer informasi proyek -->
                                 <h3>Proyek 3</h3> <!-- Judul proyek -->
                                 <p>Deskripsi singkat tentang proyek 3.</p> <!-- Deskripsi proyek -->
                             </div>
                         </div>   
                         <div class="project-card scroll-fade"> <!-- Satu kartu proyek -->
-                            <img src="https://via.placeholder.com/400x250" alt="Proyek 4"> <!--Gambar proyek-->
+                            <img src="https://via.placeholder.com/400x250" loading="lazy" alt="Proyek 4"> <!--Gambar proyek-->
                             <div class="project-info"> <!-- Kontainer informasi proyek -->
                                 <h3>Proyek 4</h3> <!-- Judul proyek -->
                                 <p>Deskripsi singkat tentang proyek 4.</p> <!-- Deskripsi proyek -->
@@ -114,33 +117,40 @@ Memiliki kemampuan komunikasi dan kerja tim yang baik.</p> <!-- Paragraf pengant
                 <section id="portfolio" class="portfolio scroll-fade">
                     <div class="container">
                         <h2>Portfolio</h2>
+                        <!-- Tombol Filter -->
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="web">Web</button>
+                            <button class="filter-btn" data-filter="iot">IoT</button>
+                            <button class="filter-btn" data-filter="plc">PLC</button>
+                        </div>
                         <div class="portfolio-grid">
-                            <div class="portfolio-item scroll-fade">
-                                <img src="assets/project1.jpg" alt="Project 1">
+                            <div class="portfolio-item scroll-fade" data-category="web">
+                                <img src="assets/project1.jpg" loading="lazy" alt="Project 1">
                                 <div class="portfolio-info">
                                     <h3>Website Company Profile</h3>
                                     <p>Website modern untuk profil perusahaan dengan HTML, CSS, dan JS.</p>
                                 </div>
                             </div>
 
-                            <div class="portfolio-item scroll-fade">
-                                <img src="assets/project2.jpg" alt="Project 2">
+                            <div class="portfolio-item scroll-fade" data-category="iot">
+                                <img src="assets/project2.jpg"  loading="lazy" alt="Project 2">
                                 <div class="portfolio-info">
                                     <h3>IoT Monitoring System</h3>
                                     <p>Sistem pemantauan suhu berbasis ESP32 dengan dashboard web.</p>
                                 </div>
                             </div>
 
-                            <div class="portfolio-item scroll-fade">
-                                <img src="assets/project3.jpg" alt="Project 3">
+                            <div class="portfolio-item scroll-fade" data-category="plc">
+                                <img src="assets/project3.jpg" loading="lazy" alt="Project 3">
                                 <div class="portfolio-info">
                                     <h3>Mobile App UI</h3>
                                     <p>Desain antarmuka aplikasi mobile untuk layanan edukasi online.</p>
                                 </div>
                             </div>
 
-                            <div class="portfolio-item scroll-fade">
-                                <img src="assets/project4.jpg" alt="Project 4">
+                            <div class="portfolio-item scroll-fade" data-category="web">
+                                <img src="assets/project4.jpg" loading="lazy" alt="Project 4">
                                 <div class="portfolio-info">
                                     <h3>Mobile App UI</h3>
                                     <p>Desain antarmuka aplikasi mobile untuk layanan edukasi online.</p>
