@@ -199,3 +199,34 @@ filterBtns.forEach(btn => {
         });
     });
 });
+
+
+const testimonials = document.querySelectorAll('.testimonial');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+let currentIndex = 0;
+
+function showTestimonial(index) {
+  testimonials.forEach((t, i) => {
+    t.classList.remove('active');
+    if (i === index) {
+      t.classList.add('active');
+    }
+  });
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(currentIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  showTestimonial(currentIndex);
+});
+
+// Auto-slide setiap 5 detik
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  showTestimonial(currentIndex);
+}, 5000);

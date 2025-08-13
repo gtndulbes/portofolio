@@ -231,7 +231,7 @@ section li {
 }
 
 .project-card:hover { /* Saat kursor di atas kartu */
-  transform: scale(1.05); /* Sedikit membesar */
+  transform: translateY(-5px); /* Sedikit mengangkat kartu */
   box-shadow: 0 8px 12px rgba(0,0,0,0.4); /* Bayangan lebih besar */
 }
 
@@ -435,7 +435,7 @@ section li {
 .filter-btn.active {
   background: #ff880061;
 }
-   
+
 /* Grid untuk tata letak portofolio */
 .portfolio-grid {
   display: grid;
@@ -478,6 +478,128 @@ section li {
 .portfolio-info p { 
   font-size: 0.9rem;
   color: #0077b6;
+}
+
+/* ======== TESTIMONIALS ======== */
+.testimonials {
+  text-align: center;
+  padding: 50px 20px;
+  background:  #38bff894;
+}
+
+.testimonial-container {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+
+.testimonial {
+  display: none;
+  font-style: italic;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.testimonial.active {
+  display: block;
+  opacity: 1;
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+  color: #555;
+}
+
+.testimonial-controls {
+  margin-top: 15px;
+}
+
+.testimonial-controls button {
+  padding: 8px 14px;
+  margin: 0 5px;
+  border: none;
+  background: #33333330;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.testimonial-controls button:hover {
+  background: #555;
+}
+
+/* ======== BLOG SECTION ======== */
+.blog-section {
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
+
+.blog-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.blog-date {
+  display: block;
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.read-more {
+  display: inline-block;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.read-more:hover {
+  color: #0056b3;
 }
 
 /* ======== PARALLAX BACKGROUND ======== */
